@@ -21,7 +21,7 @@ public class Field {
 
     public int getDown() {
         if (this.isAdjustable) {
-            Print("Warning - attempting to retrieve \"down\" value of an "
+            System.out.println("Warning - attempting to retrieve \"down\" value of an "
                     + "adjustable field object. Returning 0.");
         }
         return this.down;
@@ -29,7 +29,7 @@ public class Field {
 
     public int getAcross() {
         if (this.isAdjustable) {
-            Print("Warning - attempting to retrieve the \"across\" value of "
+            System.out.println("Warning - attempting to retrieve the \"across\" value of "
                     + "an adjustable field object. Returning 0.");
         }
         return this.across;
@@ -41,7 +41,7 @@ public class Field {
 
     public int getPlayerValue() {
         if (!this.isAdjustable) {
-            Print("Warning - attempting to retrieve the player value of "
+            System.out.println("Warning - attempting to retrieve the player value of "
                     + "an non-adjustable field object. Returning -1.");
         }
         return this.playerValue;
@@ -56,15 +56,11 @@ public class Field {
                 this.playerValue = value;
             }
         } else {
-            Print("Warning - attempting to set the player value of a "
+            System.out.println("Warning - attempting to set the player value of a "
                     + "non-adjustable field object. player value is set "
                     + "to 0");
             this.playerValue = 0;
         }
-    }
-
-    public static void Print(String s) {
-        System.out.println(s);
     }
 
     public static void main(String[] args) {

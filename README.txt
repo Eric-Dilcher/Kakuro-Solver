@@ -1,4 +1,4 @@
-This program recursively solves Kakuro (Cross sums) puzzles. It reads a file in the current working directory and populates a 2D array of Field objects according to the file. Expects the file to have the following format:
+This program recursively solves Kakuro (Cross sums) puzzles. It reads a puzzle file in the current working directory and populates a 2D array of Field objects according to the puzzle file. Expects the file to have the following format:
 
 First Line: (integer representing number of rows) (integer representing number of columns) 
 

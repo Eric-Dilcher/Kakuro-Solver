@@ -2,7 +2,9 @@ This program recursively solves Kakuro (Cross sums) puzzles. It reads a puzzle f
 
 First Line: (integer representing number of rows) (integer representing number of columns) 
 
-rows*columns number of lines, each with: if "clue" box: (integer representing across value) (integer representing down value) {note: 0 0 if empty clue box} if blank box (integer -1).
+The following rows*columns number of lines: 
+if "clue" box: (integer representing across value) (integer representing down value) {note: 0 0 if empty clue box} 
+if blank box (integer -1).
 Each line in the file represents a box of the puzzle according to the order: left to right, top to bottom.
 
 Sample puzzles are included in the repository, and are named kakuro*.txt. Run the "Kakuro" bytecode to solve all included puzzles (Solutions printed to console).

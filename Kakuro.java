@@ -109,10 +109,6 @@ public class Kakuro {
     return grid; // return the 2D array of Field objects
   }
 
-  public Field[][] getGrid() {
-    return this.grid;
-  }
-
   public void solve() {
     // start solving (recursively) for the top left field
     if (solve(this.grid, 0, 0)) {
